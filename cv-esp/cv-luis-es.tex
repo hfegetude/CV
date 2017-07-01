@@ -1,0 +1,133 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv-esp} % a4paper for A4
+\usepackage[spanish]{babel}
+\selectlanguage{spanish}
+\usepackage[utf8]{inputenc}
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{../img-shared/profile1.jpeg} % Profile picture
+
+\cvname{Luis} % Your name
+\cvjobtitle{Ingeniero Técnico en \\ Tecnologías de \\Telecomunicación} % Job title/career
+
+\cvdate{16 Marzo 1995} % Date of birth
+\cvaddress{España, Granada, Calle Mariana Pineda 18630} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{+34 644003467} % Phone number
+\cvsite{@hfegetude} % Personal website
+\cvmail{hfegetude@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 ABOUT ME
+%----------------------------------------------------------------------------------------
+
+\aboutme{Soy estudiante del grado de Tecnologías en Tecnologías de Telecomuniación en la UGR, actualmente me encuentro cursando el último año y de momento solo me queda el Trabajo de Fin de Grado por acabar.
+Mis intereses son bastante amplios, me gusta el diseño de hardware manejando generalmente Altium Designer, aunque también he probado KiCAD. También tengo interés en el diseño de software, manejando generalmente Python y C para mis experimentos, conectando placas al PC. Soy, además, usuario habitual de linux.
+} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+\skills{
+{Web Frontend (HTML, CSS, Javascript)/2},
+{Solid Works/ 1},
+{VHDL/3},
+{C/2},
+{Python/3.5},
+{Altium/3}}
+
+%------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Educación}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{desde 2013}{Grado en Ingeniería de Tecnologías de Telecomunicación}{\\Universidad de Granada}{Nota media: 8.35}
+	\twentyitem{2015 - 2016}{Año de Erasmus}{\\Universidad de Link\"oping, Suecia}{}
+	\twentyitem{2010 }{Nivel B2 de Inglés}{}{Cambridge First Certificate}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experiencia}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{2016 - Act}{Miembro de Granasat}{}{Construyendo un Tracker basado en arduino con diferentes sensores y dos cámaras ov7670 enviando datos por APRS, con el Prof. Andrés Roldán Aranda}
+	\twentyitem{2016-2017}{Becario de colaboración con el departamento de Electrónica y Tecnología de Computadores}{}{}
+
+\end{twenty}
+
+\section{Habilidades}
+\subsection{Software}
+\begin{enumerate}
+	\item \textbf{Altium:} Diseño de la PCB del Tracker basado en Arduino
+	\item \textbf{KiCAD:} Diseño de diferentes PCB de prueba para el Tracker basado en Arduino
+	\item \textbf{Solid Works:} Diseño de las piezas del Tracker de Arduino para la vista en 3D de Altium
+\end{enumerate}
+
+\subsection{Lenguajes de programación}
+\begin{enumerate}
+	\item \textbf{C:} Primer lenguaje usado en la carrera. Usado en para programar la placa arduino con avr-gcc
+	\item \textbf{Python:} Lenguaje usado durante el curso de {\it Web Programming} en la universidad de Link\"oping para montar un servidor web
+	\item \textbf{VHDL:} Usado para programar un equipo de música en una placa {\it Altera Cyclone 2} creando los drivers de VGA y obtención de sonido
+	\item \textbf{Javascript: } Usado durante el curso {\it Web Programming} en la universidad de Link\"oping para el front end de una pagina web estilo {\it Facebook}
+	\item \textbf{Java: } Primer lenguaje aprendido. Diseño de aplicaciones simples
+\end{enumerate}
+
+\subsection{Lenguajes de marcado}
+\begin{enumerate}
+	\item \textbf{HTML, CSS:} Usado durante el curso {\it Web Programming} para el diseño del {\it Front End}
+	\item \textbf{\LaTeX:} Usado para la entrega de trabajos en al universidad y el desarrollo del TFG
+\end{enumerate}
+
+\subsection{Sistemas Operativos}
+\begin{enumerate}
+	\item Linux: Usuario habitual, actualmente usando (y aprendiendo) {\it Arch Linux}
+	\item MacOS: Usado sobretdo para la creación de música con {\it GarageBand}
+	\item Windows
+\end{enumerate}
+
+
+\end{document}
